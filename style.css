@@ -14,7 +14,6 @@ html {
         margin-right: auto;
         margin-top: 70px;
 
-        background-color: rgba(221, 160, 221, 0.638);
         /* background-color: rgba(255, 255, 255, 0.431); */
         border-radius: 20px;
 
@@ -76,6 +75,10 @@ html {
             border-radius: 10px;
         }
 
+        .hidden {
+            display: none;
+        }
+
         .players {
             display: flex;
         }
@@ -90,13 +93,17 @@ html {
                 
                 color: rgb(87, 81, 81);
 
-                border-radius: 0px 20px 20px 0px;   
             }
-        
+            
             .player-one {
-                 
-                background-color: rgba(255, 255, 255, 0.521);
+                
+                background-color: rgba(255, 255, 255, 0.581);
                 border-radius: 20px 0px 0px 20px;   
+            }
+            
+            .player-two { 
+                background-color: rgba(221, 160, 221, 0.581);
+                border-radius: 0px 20px 20px 0px;   
             }
             
             .player {
