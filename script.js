@@ -48,7 +48,7 @@ const scoreTwo = document.querySelector('.score-two');
 let winner = false;
 
 const win = function(score){
-    if(score >= 10){
+    if(score >= 50){
         return true;
     }
     else {
@@ -101,6 +101,7 @@ hold.addEventListener('click',function(){
             if(win(Number(playerOneScore.textContent))){
                 winningTune.play();
                 winningDisplay.classList.remove('hide');
+                divImage.classList.add('hidden');
                 winningPlayer.textContent = "Player 1 wins the Game🏆";
                 console.log("won");
                 // document.querySelector('.player-one').style.backgroundColor = "red";
@@ -115,6 +116,7 @@ hold.addEventListener('click',function(){
             if(win(Number(playerTwoScore.textContent))){
                 winningTune.play();
                 winningDisplay.classList.remove('hide');
+                divImage.classList.add('hidden');
                 winningPlayer.textContent = "Player 2 wins the Game🏆";
                 // console.log(winningPlayer.textContent);
                 winner = true;
@@ -144,6 +146,7 @@ overlay.addEventListener('click', function(){
 
 document.addEventListener('keydown',function(e){
     if(e.key === "Escape"){
-        winningDisplay.classList.add('hide');
+        // console.log("clicked");
+        gamereset();
     }
 })
