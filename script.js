@@ -1,4 +1,4 @@
-"use script";
+'use strict';
 
 const playerOneScore = document.querySelector('.player-one-score');
 const playerTwoScore = document.querySelector('.player-two-score');
